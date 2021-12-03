@@ -234,6 +234,7 @@ data.test <- data[-sub, ]
 data_acc <- numeric() #holding variable
 knn_predict <- NULL
 
+
 for(i in 1:40){
   # Apply knn with k = i
   predict <- knn(train = data.train[, -8],
